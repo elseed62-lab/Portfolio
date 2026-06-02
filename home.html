@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="script" href="../java/index.script">
+</head>
+<body>
+       <!-- header -->
+     <header class="header">
+        <h1 class="logo"> Elseed</h1>
+    
+    <div class="topnav">
+     <a href="resume.html">Resume</a>
+    <a href="futuregoals.html">Current projects</a>
+    <a href="photography.html">photography</a>
+    <a href="posters.html">illustrator work</a>
+    <a href="about.html">biblography</a>
+    <a href="form.html">Review</a>
+  </div>
+</header>
+<div class="dropdownnav">
+    <a href="javascript:void(1);" class="fa fa-bars" onclick="myFunction()">
+    <i class="fa fa-bars">☰</i>
+  </a>
+  <div id="myLinks">
+    <a href="resume.html">Resume</a>
+    <a href="futuregoals.html">Current projects</a>
+    <a href="photography.html">photography</a>
+    <a href="posters.html">illustrator work</a>
+    <a href="about.html">biblography</a>
+    <a href="form.html">Review</a>
+  </div>
+ 
+  
+   <script>function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script> 
+
+  </a>
+</div>
+     
+
+     <!-- About section -->
+      <section id="about" class="about">
+        <img src="../img/EthanP.jpg" alt="Profile Picture" class="profile-pic">
+        <h2>About Me</h2>
+        <p>I am Ethan Seeds, I am a passionate student learning web development, photography, and design.</p>
+      </section>
+
+        <!-- Skills Services section -->
+        <section id="skill" class="skill">
+            <h2>My Skills</h2>
+           <div class="grid">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">Learning JavaScript</div>
+            <div class="card">Photography</div>
+            <div class="card">Microsoft Office</div>
+            <div class="card">Github</div>
+            <div class="card">Illistrator & Indesign</div>
+            <div class="card">Photoshop</div>
+           </div>
+        </section>
+
+        <!--Footer-->
+    <footer id="footer" class="footer">
+        <p>© 2026 Ethan Seeds</p>
+    </footer>
+
+</body>
+</html>
