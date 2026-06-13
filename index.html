@@ -6,77 +6,147 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="img" href="img/EthanP.jpg">
-    <link rel="script" href="../java/index.script">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
        <!-- header -->
      <header class="header">
-        <h1 class="logo"> Elseed</h1>
+        <a href="home"  class="logo"> Ethan Seeds</a>
+        
+        <i class="bx bx-menu" id="menu-icon"></i>
     
-    <div class="topnav">
-    
-     <a href="html/resume.html">Resume</a>
-    <a href="html/futuregoals.html">Current projects</a>
-    <a href="html/photography.html">Photography</a>
-    <a href="html/posters.html">Illustrator work</a>
-    <a href="html/about.html">Biblography</a>
-    <a href="html/project.html">Projects</a>
-  </div>
+    <nav class="topnav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="html/posters.html">Examples</a>
+    <a href="#contact">Contact</a>
+    </nav>
 </header>
-<div class="dropdownnav">
-    <a href="javascript:void(1);" class="fa fa-bars" onclick="myFunction()">
-    <i class="fa fa-bars">☰</i>
-  </a>
-  <div id="myLinks">
-    <a href="html/futuregoals.html">Current projects</a>
-    <a href="html/photography.html">Photography</a>
-    <a href="html/posters.html">Illustrator work</a>
-    <a href="html/about.html">Biblography</a>
-    <a href="html/resume.html">Review</a>
-    <a href="html/project.html">Projects</a>
-  </div>
- 
-  
-   <script>function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script> 
-
-  </a>
-</div>
      
 
      <!-- About section -->
-      <section id="about" class="about">
+      <section id="home" class="home">
+        <div class="home-img">
         <img src="img/EthanP.jpg" alt="Profile Picture" class="profile-pic">
-        <h2>About Me</h2>
+      </div>
+
+      <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1>Ethan Seeds</h1>
+        <h3>And I'm a <span class="multiple-text">Graphic Designer</span>
+          
+        </h3>
         <p>I am Ethan Seeds, I am a passionate student learning web development, photography, and design.</p>
+        
+        <div class="social-media">
+          <a href="https://www.linkedin.com"><i class='bx bxl-linkedin'></i>
+          </a>
+          <a href="https://www.github.com"><i class='bx bxl-github'></i>
+          </a>
+          <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+          <a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a>
+        </div>
+        </div>
+      
+        
+        
       </section>
 
         <!-- Skills Services section -->
-        <section id="skill" class="skill">
-            <h2>My Skills</h2>
-           <div class="grid">
-            <div class="card">HTML</div>
-            <div class="card">CSS</div>
-            <div class="card">Learning JavaScript</div>
-            <div class="card">Photography</div>
-            <div class="card">Microsoft Office</div>
-            <div class="card">Github</div>
-            <div class="card">Illistrator & Indesign</div>
-            <div class="card">Photoshop</div>
+        <section id="about" class="about">
+          <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+              I'm a 
+              <span>Graphic Designer</span></h3>
+            <p>My design style is very free form, I like to go with the flow. Over the years at Lwtech I've gotten better at designing.
+              Ideally I hope to garner interest from corporations, small businesses, and others interested going forward.</p>
+              <a href="html/about.html" class="btn">Read More</a>
+           </div>
+
+           <div class="about-img">
+            <img src="img/EthanSeeds.jpg" alt="about-image">
            </div>
         </section>
+        <section class="services" id="services">
+          <h2 class="heading">My <span>Services</span></h2>
+
+          <div class="services-container">
+            <div class="services-box">
+              <i class="bx bx-code"></i>
+              <h3>Web Development</h3>
+              <p>I am developing foundational web development skills through learning HTML and CSS.
+                 I can create basic web pages using HTML elements such as headings, paragraphs, links, images, and lists.
+                  I am also gaining experience with CSS to style and format web pages, including working with colors, fonts, spacing, and page layouts.
+                  As a beginner, I am focused on building responsive, user-friendly websites while continuing to expand my understanding of modern web design principles 
+                  and front-end development techniques.</p>
+                  <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+              <i class="bx bx-brush"></i>
+              <h3>UI/UX Design Experience</h3>
+              <p>As a novice web developer, I designed and developed a website for Cart Clash, a digital trading card game centered around collecting and trading retail item cards. Through this project, I applied HTML and CSS to create engaging page layouts, card displays, navigation menus, and responsive design elements.
+                 The development process helped me gain valuable UI/UX skills, including creating intuitive user flows, organizing content for easy navigation, selecting visually appealing color schemes, maintaining design consistency, and improving accessibility.
+                  I also learned how to design interfaces that enhance user engagement while balancing functionality and aesthetics, providing a strong foundation in front-end web development and user-centered design.</p>
+                  <a href="html/posters.html"  class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+              <i class="bx bx-image"></i>
+              <h3>Photography, Lightroom, PhotoShop Skills</h3>
+              <p>As a novice photographer, I have developed foundational skills in capturing high-quality images while learning the principles of composition, lighting, and visual storytelling.
+                 Through hands-on experience, I have gained proficiency in Adobe Photoshop and Adobe Lightroom, using these tools to enhance photographs through color correction, exposure adjustments,
+                  retouching, cropping, and image organization. I am building my ability to create visually appealing images while developing an understanding of photo editing workflows, 
+                  digital asset management, and creative design techniques. My growing photography and editing skills demonstrate attention to detail, creativity, and a commitment to continuous learning in digital media production.</p>
+                  <a href="html/photography.html"  class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+              <i class="bx bx-vector"></i>
+              <h3>Adobe Illustrator & Indesign Skills</h3>
+              <p>I have two years of experience working with Adobe Illustrator and one year of experience using Adobe InDesign to create professional visual and print design projects.
+                 Through Illustrator, I have developed skills in vector graphic design, logo creation, typography, digital illustrations, and layout composition.
+                  My experience with InDesign has allowed me to create and organize multi-page documents, brochures, flyers, and other print-ready materials while maintaining strong attention to detail and visual consistency.
+                  These experiences have strengthened my understanding of design principles, branding, page layout, and effective visual communication, while continuing to build my confidence in the Adobe Creative Suite.</p>
+                  <a href="html/posters.html"  class="btn">Read More</a>
+            </div>
+
+          </div>
+        </section>
+        <section id="contact" class="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="number" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
 
         <!--Footer-->
-    <footer id="footer" class="footer">
-        <p>© 2026 Ethan Seeds</p>
-    </footer>
+    <footer class="footer">
+      <div class="social">
+              <a href="https://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.github.com"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com"><i class='bx bxl-instagram' ></i></a>
+        </div>
 
+        <p class="copyright">
+            © Ethan Seeds - All Rights Reserved
+        </p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

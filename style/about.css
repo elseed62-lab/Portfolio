@@ -25,7 +25,7 @@ a {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 2%;
     align-items: center;
     height: 80px;
     background-color: rgb(216, 104, 0);
@@ -42,7 +42,7 @@ nav .right a {
 nav .right a:last-child {
     color: var(--background-color);
     background-color: var(--text-color);
-    padding: 8px 16px;
+    padding: 8px 8px;
     border-radius: 4px;
 }
 nav .right a span {
@@ -135,50 +135,51 @@ nav .right a span {
     border-radius: 2px
 }
 .experience-section{
-    padding: 0 50px;
-    margin-bottom: 100px;
-    display: flex;
+   padding: 0 15px;
+    align-items: left;
+    text-align: left;
+    justify-content: space-around;
+    margin-bottom: 10%;
 }
 .experience-section h2 {
     font-size: 35px;
     font-family: 'Arial Black', Gadget, sans-serif;
-    margin-bottom: 30px;
     justify-content: center;
+    align-items: left;
 }
-.experience-section .group {
-    gap: 50px;
-}
-.experience-section .group .personal-experience {
-    flex: 8;
-    align-items: right;
-}
-.experience-section .group .text {
-    flex: 2;
+.experience-section .text {
+    flex:6;
+    margin-top: 8%;
     text-align: left;
-    max-width: 200;
-    display: flex;
-    justify-content: right;
-
 }
-.experience-section .group .personal-experience img {
+.experience-section .personal-experience {
+    justify-content: left;
+    flex:2;
+    display: inline-flex;
+}
+
+.experience-section .personal-experience img {
     aspect-ratio: 1/1;
     width: 200px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 10px;
+    float: left;
     display: flex;
+    margin-right: 15%;
+    text-align: center;
+    
    
 }
-.experience-section .group .personal-experience p{
+.experience-section .personal-experience p{
     font-weight: 600;
     font-size: 16;
-    float: left ;
     justify-content: center;
     text-align: center;
+
 }
-.experience-section .group .personal-education p:last-child {
-    font-weight: normal;
-    justify-content: right;
+.experience-section .personal-experience p:last-child {
+    font-weight: bold;
+    justify-content: center;
 }
 .contact-section {
     padding: 0 50px;
@@ -229,14 +230,14 @@ nav .right a span {
     filter: brightness (0.9);
 }
  .slider-wrapper {
-        max-width: 48rem;
+        max-width: 60rem;
         position: relative;
         margin: 0 auto;
     }
     .slider {
         display: flex;
         aspect-ratio: 16/9;
-        overflow-x: auto;
+        overflow-x: hidden;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
@@ -261,13 +262,18 @@ nav .right a span {
         height: .5rem;
         border-radius: 50%;
         border: none;
-        background-color: #fff;
+        background-color: #8017d6;
         opacity: 0.75;
         transition: opacity ease  250ms;
     }
     .slider-nav a:hover {
         opacity: 1;
     }
+@media (max-width: 1000px){
+    .nav {
+        padding: 1%;
+    }
+}
 @media (max-width: 800px) {
     .aboutme-section .text h2 {
         font-size: 35px;
@@ -312,8 +318,7 @@ nav .right a span {
     nav .right a:last-child {
         color: var(--text-color);
         background-color: transparent;
-        padding: 0;
-        display: none;
+        padding: 8px 8px;
     }
  
     .aboutme-section {
