@@ -1,22 +1,33 @@
-    :root {
-        --text-color: black;
-        --background-color: rgb(240, 195, 137);
-        --link-color: black;
-        --hover-color: #ddd;
-    }
-
-
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-html{
+    text-decoration: none;
+    border: none;
+    outline: none;
     scroll-behavior: smooth;
+    font-family: -apple-system, sans-serif;
+}
+
+:root {
+    --bg-color: #fff;
+    --snd-bg-color: #d5fdf9;
+    --text-color: #000;
+    --main-color: #974722;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 body {
-    font-family: 'helvetica',sans-serif;
-    background-color: rgb(238, 214, 168);
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 45vh;
+    padding: 10rem 5% 2rem;
 }
 a {
     color: var(--link-color);
@@ -277,7 +288,43 @@ nav .right a span {
   margin-left: 2rem;
   align-items: center;
 }
+.services h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 6rem 2rem 6rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.3rem solid var(--bg-color);
+    transition: 0.3s ease;
+}
 
+.services-container .services-box:hover {
+    background-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.services-box i {
+    font-size: 5rem;
+    color: var(--main-color);
+}
+.services-box h3 {
+    font-size: 2.6rem;
+}
+.services-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
 .gallery__grid img {
   transition: 0.3s;
   max-width: 60%;
