@@ -269,6 +269,28 @@ nav .right a span {
     .slider-nav a:hover {
         opacity: 1;
     }
+    .gallery__grid {
+  margin-block: 1rem;
+  display: inline;
+  gap: 1rem;
+  justify-content: center;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+.gallery__grid img {
+  transition: 0.3s;
+  max-width: 60%;
+  
+}
+
+.gallery__grid:hover img:not(:hover) {
+  opacity: 0.5;
+}
+
+.gallery__btn {
+  text-align: center;
+}
 @media (max-width: 1000px){
     .nav {
         padding: 1%;

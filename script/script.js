@@ -1,18 +1,18 @@
-let menu = document.querySelector('menu-icon');
-let navbar = document.querySelector('.topnav');
+let menu = document.querySelector('#menu-icon');
+let topnav = document.querySelector('#topnav');
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+    topnav.classList.toggle('active');
 }
 
 window.onscroll = () => {
     menu.classList.remove('bx-x');
-    navbar.classList.remove('active');
+    topnav.classList.remove('active');
 }
 
 const typed = new Typed('.multiple-text',  {
-    strings: ['Frontend Developer', 'Backend Developer', 'Blockchain Developer', 'Web Designer', 'Youtuber'],
+    strings: ['Illustrator', 'Photographer', 'Graphic Designer', 'Web Designer', 'Marketer'],
     typeSpeed: 80,
     backSpeed: 80,
     backDelay: 1200,
